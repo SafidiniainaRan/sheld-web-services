@@ -6,16 +6,13 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-import org.springframework.format.annotation.DateTimeFormat;
-
-import com.fasterxml.jackson.annotation.JsonFormat;
 
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
 
 @AllArgsConstructor
 @NoArgsConstructor
-@Table(name = "t_typemessagerie_grp")
+@Table(name = "t_utilisateur")
 @Entity
 public class Utilisateur {
   @Id
@@ -290,44 +287,5 @@ public class Utilisateur {
     this.description = description;
   }
 
-  public Utilisateur() {
-  }
-
-  public Utilisateur(int idutilisateur, String nom, String prenom, int idgenre, int idpays,
-      LocalDateTime datedenaissance, String adresse, String mail, String contact, String pseudo, String motdepasse,
-      LocalDateTime dateheureinscription, double longitudeinscription, double latitudeinscription, int idoperateur,
-      String wifi, String bluetooth, String imei, String iccid, String meid, String modem, String seid, String modele,
-      String serietelephone, LocalDateTime datedebut, LocalDateTime datefin, int estActive, String SSID,
-      String codeabrege, String description) {
-    this.idutilisateur = idutilisateur;
-    this.nom = nom;
-    this.prenom = prenom;
-    this.idgenre = idgenre;
-    this.idpays = idpays;
-    this.datedenaissance = datedenaissance;
-    this.adresse = adresse;
-    this.mail = mail;
-    this.contact = contact;
-    this.pseudo = pseudo;
-    this.motdepasse = motdepasse;
-    this.dateheureinscription = dateheureinscription;
-    this.longitudeinscription = longitudeinscription;
-    this.latitudeinscription = latitudeinscription;
-    this.idoperateur = idoperateur;
-    this.wifi = wifi;
-    this.bluetooth = bluetooth;
-    this.imei = imei;
-    this.iccid = iccid;
-    this.meid = meid;
-    this.modem = modem;
-    this.seid = seid;
-    this.modele = modele;
-    this.serietelephone = serietelephone;
-    this.datedebut = datedebut;
-    this.datefin = datefin;
-    this.estActive = estActive;
-    this.SSID = SSID;
-    this.codeabrege = codeabrege;
-    this.description = description;
-  }
+  
 }
