@@ -12,7 +12,7 @@ import birger.sav.service.TypecontactService;
 
 @RestController
 @RequestMapping("/typecontacts")
-public class TypecontactController {
+public class TypecontactController extends BaseController {
     @Autowired
     TypecontactService typecontactService;
     @GetMapping("")
